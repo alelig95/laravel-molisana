@@ -135,7 +135,12 @@
   </head>
   <body>
 
-    
+    @foreach ($array as $key => $pasta)
+
+      @foreach ($pasta as $keyPasta => $value)
+        {{$value}} <br/>
+      @endforeach
+    @endforeach
 
   </body>
 </html>
