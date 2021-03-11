@@ -134,13 +134,25 @@
     <title>Molisana</title>
   </head>
   <body>
+    @include('components.header')
+    <div class="type-pasta">
+      <div class="container">
+        <h2>le lunghe</h2>
+        @foreach (array_slice($array, 0, 5) as $pasta)
+          <img class="poster" src="{{$pasta['src']}}" alt="">
+        @endforeach
 
-    @foreach ($array as $key => $pasta)
+        <h2>le corte</h2>
+        @foreach (array_slice($array, 5, 6) as $pasta)
+          <img class="poster" src="{{$pasta['src']}}" alt="">
+        @endforeach
 
-      @foreach ($pasta as $keyPasta => $value)
-        {{$value}} <br/>
-      @endforeach
-    @endforeach
+        <h2>le cortissime</h2>
+        @foreach (array_slice($array, 11, 11) as $pasta)
+          <img class="poster" src="{{$pasta['src']}}" alt="">
+        @endforeach
+      </div>
+    </div>
 
   </body>
 </html>

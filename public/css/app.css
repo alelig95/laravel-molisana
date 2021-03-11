@@ -1,1 +1,25 @@
+.logo {
+  text-align: center;
+}
+.logo li {
+  display: inline-block;
+  margin-right: 10px;
+}
 
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.poster {
+  width: 350px;
+}
+
+.type-pasta {
+  background-color: lightpink;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: blue;
+}
