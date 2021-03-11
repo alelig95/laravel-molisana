@@ -7,7 +7,7 @@
 }
 
 .container {
-  width: 1300px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -16,10 +16,18 @@
 }
 
 .type-pasta {
-  background-color: lightpink;
+  background: url("/images/fondo-pag-speciali.jpg");
 }
 
 h2 {
   text-transform: uppercase;
   color: blue;
+}
+
+h2:first-child {
+  padding-top: 60px;
+}
+
+.product-details {
+  text-align: center;
 }

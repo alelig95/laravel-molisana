@@ -124,3 +124,19 @@
 
   $array = json_decode($data, true);
 @endphp
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <title></title>
+  </head>
+  <body>
+    @include('components.header')
+    <div class="product-details">
+      {{$array[$idProduct]["titolo"]}} <br>
+      {{$array[$idProduct]["descrizione"]}}
+    </div>
+
+  </body>
+</html>
