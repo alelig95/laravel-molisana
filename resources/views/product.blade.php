@@ -6,20 +6,21 @@
     <title>Molisana product</title>
   </head>
   <body>
+
     @include('components.header')
 
-      <div class="product-details">
+    <div class="product-details">
 
-        <h4>{{$pastaArray[$idProduct - 1]["titolo"]}} </h4>
-        <img class="img-h" src="{{$pastaArray[$idProduct - 1]["src-h"]}} " alt=""> <br>
-        <img  class="img-p" src="{{$pastaArray[$idProduct - 1]["src-p"]}} " alt="">
-        <div class="container">
-          <p>{!!$pastaArray[$idProduct - 1]["descrizione"]!!}</p>
-        </div>
-
-      </div>
+      <h4>{{$pastaArray[$idProduct - 1]["titolo"]}} </h4>
+      <img class="img-h" src="{{$pastaArray[$idProduct - 1]["src-h"]}} " alt=""> <br>
+      <img  class="img-p" src="{{$pastaArray[$idProduct - 1]["src-p"]}} " alt="">
       <div class="container">
-        @include('components.footer')
+        <p>{!!$pastaArray[$idProduct - 1]["descrizione"]!!}</p>
       </div>
+
+    </div>
+
+    @include('components.footer')
+
   </body>
 </html>
