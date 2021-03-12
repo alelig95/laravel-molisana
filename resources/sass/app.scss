@@ -1,33 +1,114 @@
-//
-.logo{
-  text-align: center;
-
-  li{
-    display: inline-block;
-    margin-right: 10px;
-  }
-}
-.container{
-  width: 1200px;
-  margin: 0 auto;
-}
-.poster{
-  width: 350px;
-}
-
-.type-pasta{
-  background: url('/images/fondo-pag-speciali.jpg');
+// common rules
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 h2{
   text-transform: uppercase;
-  color: blue;
 }
 
-h2:first-child{
-  padding-top: 60px;
+ul{
+  list-style-type: none;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+// /common rules
+.header{
+  text-align: center;
+
+  a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  .li-container{
+    display: inline-block;
+    width: 70px;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 15px;
+  }
+  .logo{
+    height: 100px;
+  }
+}
+
+.li-container:hover{
+  background-color: lightblue;
+}
+
+.type-pasta{
+  background: url('/images/fondo-pag-speciali.jpg');
+  padding-top: 70px;
+  padding-bottom: 25px;
+
+  .poster{
+    width: 350px;
+    margin: 10px 0;
+    padding-left: 5px;
+  }
+  h2{
+    color: darkblue;
+  }
 }
 
 .product-details{
   text-align: center;
+  background-color: #b8dae4;
+  color: darkblue;
+  font-size: 18px;
+
+  p{
+    text-align: left;
+    padding-bottom: 25px;
+  }
+  .img-h{
+    height: 280px;
+  }
+  .img-p{
+    height: 550px;
+  }
+  h4{
+    padding: 45px 0 30px 0;
+  }
+}
+
+footer{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+
+  .logo{
+    height: 110px;
+  }
+  h2{
+    color: grey;
+    margin-bottom: 25px;
+  }
+  li{
+    color: grey;
+  }
+  .middle-footer{
+
+    h2:nth-child(3){
+      margin: 25px 0;
+    }
+    li{
+      padding-bottom: 10px;
+    }
+  }
+
+  .right-footer{
+
+    li{
+      padding-bottom: 10px;
+    }
+  }
 }

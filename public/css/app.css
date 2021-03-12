@@ -1,9 +1,15 @@
-.logo {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.logo li {
-  display: inline-block;
-  margin-right: 10px;
+
+h2 {
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .container {
@@ -11,23 +17,86 @@
   margin: 0 auto;
 }
 
-.poster {
-  width: 350px;
+.header {
+  text-align: center;
+}
+.header a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 17px;
+}
+.header .li-container {
+  display: inline-block;
+  width: 70px;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 15px;
+}
+.header .logo {
+  height: 100px;
+}
+
+.li-container:hover {
+  background-color: lightblue;
 }
 
 .type-pasta {
   background: url("/images/fondo-pag-speciali.jpg");
+  padding-top: 70px;
+  padding-bottom: 25px;
 }
-
-h2 {
-  text-transform: uppercase;
-  color: blue;
+.type-pasta .poster {
+  width: 350px;
+  margin: 10px 0;
+  padding-left: 5px;
 }
-
-h2:first-child {
-  padding-top: 60px;
+.type-pasta h2 {
+  color: darkblue;
 }
 
 .product-details {
   text-align: center;
+  background-color: #b8dae4;
+  color: darkblue;
+  font-size: 18px;
+}
+.product-details p {
+  text-align: left;
+  padding-bottom: 25px;
+}
+.product-details .img-h {
+  height: 280px;
+}
+.product-details .img-p {
+  height: 550px;
+}
+.product-details h4 {
+  padding: 45px 0 30px 0;
+}
+
+footer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+footer .logo {
+  height: 110px;
+}
+footer h2 {
+  color: grey;
+  margin-bottom: 25px;
+}
+footer li {
+  color: grey;
+}
+footer .middle-footer h2:nth-child(3) {
+  margin: 25px 0;
+}
+footer .middle-footer li {
+  padding-bottom: 10px;
+}
+footer .right-footer li {
+  padding-bottom: 10px;
 }
