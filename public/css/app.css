@@ -44,7 +44,7 @@ ul {
 .type-pasta {
   background: url("/images/fondo-pag-speciali.jpg");
   padding-top: 70px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 .type-pasta .poster {
   width: 350px;
@@ -76,27 +76,38 @@ ul {
 }
 
 footer {
+  height: 680px;
   margin-top: 60px;
+  background-image: url("https://www.lamolisana.it/wp-content/uploads/2020/06/footer-montagne-bottom.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+footer .footer {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 10px;
 }
-footer .logo {
-  height: 110px;
-}
-footer h2 {
+footer .footer h2 {
   color: grey;
   margin-bottom: 25px;
 }
-footer li {
+footer .footer li {
   color: grey;
 }
-footer .middle-footer h2:nth-child(3) {
+footer .footer-left .logo {
+  height: 110px;
+}
+footer .footer-middle {
+  width: 300px;
+}
+footer .footer-middle h2:nth-child(3) {
   margin: 25px 0;
 }
-footer .middle-footer li {
+footer .footer-middle li {
   padding-bottom: 10px;
 }
-footer .right-footer li {
+footer .footer-right {
+  width: 300px;
+}
+footer .footer-right li {
   padding-bottom: 10px;
 }

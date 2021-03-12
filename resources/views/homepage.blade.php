@@ -32,9 +32,8 @@
         @endforeach
       </div>
     </div>
-    <div class="container">
-      @include('components.footer')
-    </div>
+
+    @include('components.footer')
 
   </body>
 </html>
